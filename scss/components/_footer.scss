@@ -1,0 +1,92 @@
+.footer {
+  background: #fafafa;
+  &__container {
+    padding: 85rem 20rem;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(216rem, 1fr));
+    gap: 61rem;
+    margin-bottom: 86rem;
+    
+    @include mobile {
+      grid-template-columns: repeat(auto-fill, minmax(160rem, 1fr));
+    }
+
+    @include mini-mobile {
+      grid-template-columns: repeat(auto-fill, minmax(145rem, 1fr));
+    }
+  }
+  &__title {
+    color: #101010;
+    font-size: 18rem;
+    font-weight: 700;
+    margin-bottom: 33rem;
+  }
+  &__value {
+    color: #101010;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 175rem;
+    transition: var(--transition);
+    & a {
+      &:hover {
+        color: #ed4c5c;
+      }
+    }
+  }
+
+  &__a {
+    color: #000;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    transition: var(--transition);
+    &:hover {
+      color: #ed4c5c;
+    }
+  }
+  &__soc {
+    color: #101010;
+    font-size: 12rem;
+    font-weight: 400;
+    margin-bottom: 11rem;
+    transition: var(--transition);
+    & a {
+      &:hover {
+        color: #ed4c5c;
+      }
+    }
+  }
+  &__num {
+    color: #121212;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20rem;
+    transition: var(--transition);
+    & a {
+      &:hover {
+        color: #ed4c5c;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    transition: var(--transition);
+    & a {
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+  &__copy {
+    color: #101010;
+    font-family: Lato;
+    font-size: 12rem;
+    font-weight: 400;
+  }
+}

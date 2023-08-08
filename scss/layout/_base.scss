@@ -1,0 +1,19 @@
+html {
+  font-size: 1px;
+}
+
+body {
+  font-family: var(--ff);
+  margin: 0;
+  font-size: 16rem;
+}
+
+.container {
+  max-width: calc(1110px + 40px);
+  padding: 0 20px;
+  margin-inline: auto;
+}
+
+div {
+  word-wrap: break-word;
+}

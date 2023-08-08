@@ -1,0 +1,241 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 117rem;
+  margin-bottom: 123rem;
+  gap: 125rem;
+
+  @include tablet {
+    display: grid;
+    margin-inline: auto;
+    gap: 30rem;
+    margin-top: 80rem;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Lato;
+    font-size: 36rem;
+    font-weight: 600;
+    margin-bottom: 45rem;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    color: #000;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 434rem;
+
+    @include tablet {
+      text-align: center;
+      margin-inline: auto;
+    }
+    @include footer-height {
+      max-width: 370rem;
+    }
+  }
+}
+.form-section {
+  @include tablet {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
+.form-name {
+  display: grid;
+  margin-inline: auto;
+  text-align: center;
+  gap: 30rem;
+}
+.firstname {
+  margin-right: 30rem;
+  input {
+    outline: 0;
+    width: 255rem;
+    height: 60rem;
+    padding-left: 30rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    padding-right: 30rem;
+    @include mobile {
+      width: 200rem;
+    }
+    @include footer-height {
+      width: 390rem;
+      margin-bottom: 24rem;
+      margin-right: 0;
+      margin-left: 30rem;
+    }
+    @include mini-mobile {
+      width: 370rem;
+    }
+  }
+
+  &::placeholder {
+    color: rgba(19, 39, 67, 0.5);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.lastname {
+  @include footer-height {
+    margin-inline: auto;
+    text-align: center;
+  }
+  input {
+    outline: 0;
+    width: 255rem;
+    height: 60rem;
+    border-radius: 6rem;
+    padding-left: 30rem;
+    border: 1px solid #333;
+    padding-right: 30rem;
+    @include mobile {
+      width: 200rem;
+    }
+    @include footer-height {
+      width: 390rem;
+    }
+    @include mini-mobile {
+      width: 370rem;
+    }
+  }
+
+  &::placeholder {
+    color: rgba(19, 39, 67, 0.5);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.number {
+  input {
+    padding-left: 30rem;
+    width: 540rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    margin-bottom: 24rem;
+    margin-top: 24rem;
+    height: 60rem;
+    padding-right: 60rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @include mobile {
+      width: 430rem;
+    }
+    @include footer-height {
+      width: 390rem;
+    }
+    @include mini-mobile {
+      width: 370rem;
+    }
+  }
+
+  &::placeholder {
+    color: rgba(19, 39, 67, 0.5);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.select {
+  padding-left: 30rem;
+  width: 540rem;
+  height: 60rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  color: rgba(19, 39, 67, 0.5);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
+  padding-right: 60rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  
+  @include mobile {
+    width: 430rem;
+  }
+  @include footer-height {
+    width: 390rem;
+  }
+  @include mini-mobile {
+    width: 370rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: 1.5px solid #ed4c5c;
+  background: #ed4c5c;
+  transition: var(--transition);
+  padding: 17rem 34rem 16rem 34rem;
+  &:hover {
+    background-color: transparent;
+    color: #ed4c5c;
+  }
+}
+.sel-container {
+  width: 540rem;
+  height: 60rem;
+  position: relative;
+  margin-bottom: 27rem;
+  @include tablet {
+    margin-inline: auto;
+    text-align: center;
+  }
+  @include mobile {
+    width: 430rem;
+  }
+  @include footer-height {
+    width: 390rem;
+  }
+  @include mini-mobile {
+    width: 370rem;
+  }
+}
+
+.outlined {
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 20rem;
+  user-select: disabled;
+  pointer-events: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.option {
+    color: rgba(19, 39, 67, 0.5);
+    background-color: #fff;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover{
+      background-color: #ed4c5c;
+      color: #fff;
+    }
+  }

@@ -1,0 +1,161 @@
+.use-section {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 95rem;
+  gap: 125rem;
+
+  @include tablet {
+    display: grid;
+    gap: 35rem;
+  }
+
+  &__info {
+    margin-top: 46rem;
+    @include tablet {
+      margin-inline: auto;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-family: Lato;
+    font-size: 36rem;
+    font-weight: 600;
+    max-width: 445rem;
+    margin-bottom: 24rem;
+
+    @include tablet-small {
+      font-size: 24rem;
+      word-wrap: break-word;
+    }
+  }
+
+  &__desc {
+    color: #000;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 445rem;
+    margin-bottom: 30rem;
+
+    @include tablet-small {
+      font-size: 12rem;
+      word-wrap: break-word;
+    }
+  }
+
+  &__a {
+    color: #ed4c5c;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 140%;
+    transition: var(--transition);
+
+    &:hover{
+      color: #f3750f;
+    }
+  }
+  &__img {
+    border-radius: 15px;
+    position: relative;
+  }
+  &__video {
+    position: relative;
+    max-width: 445rem;
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .use-section__label {
+    display: grid;
+    border: none;
+    background-color: #ed4c5c;
+    --w: 200px;
+    width: var(--w);
+    height: var(--w);
+    border-radius: 50%;
+    place-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: -33rem;
+    top: 121rem;
+    cursor: pointer;
+    max-width: 66rem;
+    max-height: 66rem;
+
+    @include tablet {
+      left: 50%;
+      top: 125rem;
+      transform: translateX(-50%);
+    }
+    @include footer-height {
+      display: none;
+    }
+  }
+
+  .play_pause_icon {
+    --w: 50%;
+    width: var(--w);
+    height: var(--w);
+    background: white;
+    translate: 0 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .play {
+    clip-path: polygon(
+      20% 0,
+      20% 100%,
+      90% 50%,
+      90% 50%,
+      90% 50%,
+      90% 50%,
+      90% 50%,
+      90% 50%,
+      90% 50%
+    );
+    translate: 6% 0;
+  }
+
+  .label-container:has(input:checked) .play_pause_icon,
+  .pause {
+    clip-path: polygon(
+      0 0,
+      0 100%,
+      33.33% 100%,
+      33.33% 0,
+      66.66% 0,
+      100% 0,
+      100% 100%,
+      66.66% 100%,
+      66.66% 0
+    );
+    translate: 0 0;
+  }
+
+  .play-2 {
+    clip-path: polygon(
+      20% 0,
+      20% 100%,
+      35% 90%,
+      35% 90%,
+      35% 90%,
+      90% 50%,
+      35% 10%,
+      35% 10%,
+      35% 10%
+    );
+    translate: 6% 0;
+  }
+}

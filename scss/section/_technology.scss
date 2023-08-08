@@ -1,0 +1,51 @@
+.technology-section {
+  &__title {
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 36rem;
+    font-weight: 600;
+    margin-bottom: 52rem;
+  }
+}
+
+.technology-list {
+  margin-bottom: 108rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255rem, 1fr));
+  gap: 30rem;
+}
+.technologe-item {
+  &__counter {
+    color: rgba(16, 16, 16, 0.08);
+    text-align: center;
+    font-family: Lato;
+    font-size: 100px;
+    font-weight: 700;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -18rem;
+    }
+  }
+}
+
+.technologe-item__title {
+  color: #101010;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 19rem;
+}
+.technologe-item__desc {
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10rem;
+}
